@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Pratiques et enjeux scientifiques à PACEA</title>
+<meta name="author" content="(Frédéric Santos)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="./reveal.js/dist/theme/sky.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Pratiques et enjeux scientifiques à PACEA.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Pratiques et enjeux scientifiques à PACEA</h1><p class="subtitle">(Groupe d’Archéologie Computationnelle — Réunion de lancement)</p>
+<h2 class="author">Frédéric Santos</h2><h2 class="date">Lundi 29 novembre 2021</h2>
+</section>
+
+<section>
+<section id="slide-org564590a">
+<h2 id="org564590a"><span class="section-number-2">1.</span> Situation générale</h2>
+<div class="column" style="float:left; width: 35%">
+<ul>
+<li>Plusieurs membres de PACEA concrètement investis dans la thématique de la science ouverte.</li>
+<li>Plus d&rsquo;utilisateurs de R que par le passé (et plus globalement, plus de &ldquo;culture de la programmation&rdquo;).</li>
+
+</ul>
+</div>
+
+<div class="column" style="float:right; width: 65%">
+
+<div id="orgfba259f" class="figure">
+<p><img src="./images/pci_archaeo.png" alt="pci_archaeo.png" />
+</p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf6db2a7">
+<h2 id="orgf6db2a7"><span class="section-number-2">2.</span> Formation</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgfe99e49">
+<h3 id="orgfe99e49"><span class="section-number-3">2.1.</span> Formation initiale</h3>
+<div class="column" style="float:left; width: 35%">
+<ul>
+<li>Dans le cadre du Master 1 Biogéosciences : 6 heures de cours/TP d&rsquo;introduction à R et à la statistique.</li>
+<li>Un <a href="https://f-santos.gitlab.io/tp-master-1-bgs-2020-2021/index.html">site web compagnon</a> pour le cours (créé en Rmarkdown).</li>
+<li>Pas d&rsquo;évaluation.</li>
+
+</ul>
+</div>
+
+<div class="column" style="float:right; width: 63%">
+
+<div id="org04d8f70" class="figure">
+<p><img src="./images/site_web_m1bgs.png" alt="site_web_m1bgs.png" />
+</p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org8c60261">
+<h3 id="org8c60261"><span class="section-number-3">2.2.</span> Formation continue (&ldquo;officielle&rdquo;)</h3>
+<p>
+Animation de formations (CNRS) auxquelles ont pris part certains membres de PACEA :
+</p>
+<ul>
+<li>initiation à R ;</li>
+<li>bonnes pratiques en science des données pour la recherche reproductible.</li>
+
+</ul>
+
+
+<div id="org201b937" class="figure">
+<p><img src="./images/anf_cnrs.png" alt="anf_cnrs.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org0ac3b99">
+<h3 id="org0ac3b99"><span class="section-number-3">2.3.</span> Ateliers internes PACEA &ldquo;Recherche reproductible&rdquo;</h3>
+<div class="column" style="float:left; width: 35%">
+<p style="text-align:left">
+Organisation ponctuelle d&rsquo;ateliers &ldquo;Recherche reproductible&rdquo; (environ 15 participants) :
+</p>
+<ul>
+<li>programmation lettrée ;</li>
+<li>rédaction d&rsquo;articles reproductibles.</li>
+
+</ul>
+
+<p style="text-align:left">
+<a href="https://gitlab.com/f-santos/atelier-rr-pacea-1" style="text-align:left">Dépôt GitLab dispo en ligne</a>
+</p>
+</div>
+
+<div class="column" style="float:left; width: 65%">
+
+<div id="orgd733966" class="figure">
+<p><img src="./images/atelier_RR.png" alt="atelier_RR.png" />
+</p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orge467a63">
+<h2 id="orge467a63"><span class="section-number-2">3.</span> Exemples d&rsquo;articles reproductibles</h2>
+<ul>
+<li>&ldquo;Reproductibilité faible&rdquo; (partage du code et des données) : une pratique qui devient plus répandue.</li>
+<li>&ldquo;Reproductibilité forte&rdquo; (capture intégrale de l&rsquo;environnement logiciel) : pratique encore exceptionnelle.</li>
+<li>Rédaction de manuscrits à 100% en Org mode ou Rmarkdown : quelques exemples encore marginaux.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org976d85f">
+<h3 id="org976d85f"><span class="section-number-3">3.1.</span> Rey <i>et al.</i> (2021)</h3>
+<p style="text-align:left">
+Cas assez répandu à PACEA : étude ouverte et transparente.
+</p>
+
+<ul>
+<li>Données en accès public</li>
+<li>Code source disponible sous forme de <i>notebook</i> (pdf) en <i>Supporting information online</i>.</li>
+
+</ul>
+
+<p style="text-align:left">
+<b>Référence complète :</b>
+</p>
+
+<p style="text-align:left">
+L. Rey, S. Rottier, F. Santos, &amp; G. Goude (2021). Sex and age-related
+  social organization in the Neolithic: a promising survey from the
+  Paris Basin. <i>Journal of Archaeological Science: Reports</i>,
+  38, 103092. <a href="http://dx.doi.org/10.1016/j.jasrep.2021.103092" style="text-align:left">http://dx.doi.org/10.1016/j.jasrep.2021.103092</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfa976dd">
+<h3 id="orgfa976dd"><span class="section-number-3">3.2.</span> Queffelec <i>et al.</i> (2021)</h3>
+<p style="text-align:left">
+Cas nettement plus rare : <i>data paper</i> rédigé à 100% en Rmarkdown, et publié dans une revue à accès ouvert.
+</p>
+
+<p style="text-align:left">
+Fichier source (.Rmd) du manuscrit disponible sur OSF.
+</p>
+
+<p style="text-align:left">
+<b>Référence complète :</b>
+</p>
+
+<p style="text-align:left">
+A. Queffelec, P. Fouéré, &amp; J. Caverne (2021). A database of
+  lapidary artifacts in the Caribbean for the Ceramic Age. <i>Peer
+  Community In Archaeology</i>. <a href="http://dx.doi.org/10.31235/osf.io/7dq3b" style="text-align:left">http://dx.doi.org/10.31235/osf.io/7dq3b</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc7d77f4">
+<h3 id="orgc7d77f4"><span class="section-number-3">3.3.</span> Santos (2020)</h3>
+<p style="text-align:left">
+Cas <i>a priori</i> (?) unique :
+</p>
+
+<ul>
+<li>Note technique rédigée à 100% en Org mode</li>
+<li>Code ouvert</li>
+<li>Réutilisation de données libres</li>
+<li>Image Docker avec capture de l&rsquo;environnement (R + Emacs + LaTeX) pour recompiler le manuscrit</li>
+<li><a href="https://gitlab.com/f-santos/reproducibility-package-for-santos-2020-jasr">Dépôt GitLab associé</a></li>
+
+</ul>
+
+<p style="text-align:left">
+<b>Référence complète :</b>
+</p>
+
+<p style="text-align:left">
+F. Santos (2020). Modern methods for old data: an overview of some
+  robust methods for outliers detection with applications in
+  osteology. <i>Journal of Archaeological Science: Reports</i>, 32, 102423.
+  <a href="http://dx.doi.org/10.1016/j.jasrep.2020.102423" style="text-align:left">http://dx.doi.org/10.1016/j.jasrep.2020.102423</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<p> Créé par Frédéric Santos </p>
+<script src="./reveal.js/dist/reveal.js"></script>
+<script src="./reveal.js/plugin/markdown/markdown.js"></script>
+<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+<script src="./reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown, RevealZoom, RevealNotes],
+width:1650, height:950, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'fade', slideNumber:'c/t'
+});
+
+</script>
+</body>
+</html>

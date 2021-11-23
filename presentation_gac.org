@@ -1,0 +1,116 @@
+#+TITLE: Pratiques et enjeux scientifiques à PACEA
+#+SUBTITLE: Groupe d’Archéologie Computationnelle — Réunion de lancement
+#+AUTHOR: Frédéric Santos
+#+EMAIL: frederic.santos@u-bordeaux.fr
+#+DATE: Lundi 29 novembre 2021
+#+EXPORT_FILE_NAME: ./index.html
+#+REVEAL_INIT_OPTIONS: width:1650, height:950, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'fade', slideNumber:'c/t'
+#+OPTIONS: toc:nil email:nil timestamp:nil reveal_global_header:t
+#+REVEAL_THEME: sky
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Pratiques et enjeux scientifiques à PACEA.">
+#+REVEAL_POSTAMBLE: <p> Créé par Frédéric Santos </p>
+
+* Situation générale
+#+REVEAL_HTML: <div class="column" style="float:left; width: 35%">
+- Plusieurs membres de PACEA concrètement investis dans la thématique de la science ouverte.
+- Plus d'utilisateurs de R que par le passé (et plus globalement, plus de "culture de la programmation").
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 65%">
+[[./images/pci_archaeo.png]]
+#+REVEAL_HTML: </div>
+
+* Formation
+** Formation initiale
+#+REVEAL_HTML: <div class="column" style="float:left; width: 35%">
+- Dans le cadre du Master 1 Biogéosciences : 6 heures de cours/TP d'introduction à R et à la statistique.
+- Un [[https://f-santos.gitlab.io/tp-master-1-bgs-2020-2021/index.html][site web compagnon]] pour le cours (créé en Rmarkdown).
+- Pas d'évaluation.
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 63%">
+[[./images/site_web_m1bgs.png]]
+#+REVEAL_HTML: </div>
+
+** Formation continue ("officielle")
+Animation de formations (CNRS) auxquelles ont pris part certains membres de PACEA :
+- initiation à R ;
+- bonnes pratiques en science des données pour la recherche reproductible.
+
+[[./images/anf_cnrs.png]]
+
+** Ateliers internes PACEA "Recherche reproductible"
+#+REVEAL_HTML: <div class="column" style="float:left; width: 35%">
+#+ATTR_HTML: :style text-align:left
+Organisation ponctuelle d'ateliers "Recherche reproductible" (environ 15 participants) :
+- programmation lettrée ;
+- rédaction d'articles reproductibles.
+
+#+ATTR_HTML: :style text-align:left
+[[https://gitlab.com/f-santos/atelier-rr-pacea-1][Dépôt GitLab dispo en ligne]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:left; width: 65%">
+[[./images/atelier_RR.png]]
+#+REVEAL_HTML: </div>
+
+* Exemples d'articles reproductibles
+- "Reproductibilité faible" (partage du code et des données) : une pratique qui devient plus répandue.
+- "Reproductibilité forte" (capture intégrale de l'environnement logiciel) : pratique encore exceptionnelle.
+- Rédaction de manuscrits à 100% en Org mode ou Rmarkdown : quelques exemples encore marginaux.
+
+** Rey /et al./ (2021)
+#+ATTR_HTML: :style text-align:left
+Cas assez répandu à PACEA : étude ouverte et transparente.
+
+- Données en accès public
+- Code source disponible sous forme de /notebook/ (pdf) en /Supporting information online/.
+
+#+ATTR_HTML: :style text-align:left
+*Référence complète :*
+
+#+ATTR_HTML: :style text-align:left
+L. Rey, S. Rottier, F. Santos, & G. Goude (2021). Sex and age-related
+  social organization in the Neolithic: a promising survey from the
+  Paris Basin. /Journal of Archaeological Science: Reports/,
+  38, 103092. http://dx.doi.org/10.1016/j.jasrep.2021.103092
+
+** Queffelec /et al./ (2021)
+#+ATTR_HTML: :style text-align:left
+Cas nettement plus rare : /data paper/ rédigé à 100% en Rmarkdown, et publié dans une revue à accès ouvert.
+
+#+ATTR_HTML: :style text-align:left
+Fichier source (.Rmd) du manuscrit disponible sur OSF.
+
+#+ATTR_HTML: :style text-align:left
+*Référence complète :*
+
+#+ATTR_HTML: :style text-align:left
+A. Queffelec, P. Fouéré, & J. Caverne (2021). A database of
+  lapidary artifacts in the Caribbean for the Ceramic Age. /Peer
+  Community In Archaeology/. http://dx.doi.org/10.31235/osf.io/7dq3b
+
+** Santos (2020)
+#+ATTR_HTML: :style text-align:left
+Cas /a priori/ (?) unique :
+
+- Note technique rédigée à 100% en Org mode
+- Code ouvert
+- Réutilisation de données libres
+- Image Docker avec capture de l'environnement (R + Emacs + LaTeX) pour recompiler le manuscrit
+- [[https://gitlab.com/f-santos/reproducibility-package-for-santos-2020-jasr][Dépôt GitLab associé]]
+
+#+ATTR_HTML: :style text-align:left
+*Référence complète :*
+
+#+ATTR_HTML: :style text-align:left
+F. Santos (2020). Modern methods for old data: an overview of some
+  robust methods for outliers detection with applications in
+  osteology. /Journal of Archaeological Science: Reports/, 32, 102423.
+  http://dx.doi.org/10.1016/j.jasrep.2020.102423
+
+* Emacs config :noexport:
+;;; Local Variables:
+;;; org-reveal-root:"./reveal.js"
+;;; End:
