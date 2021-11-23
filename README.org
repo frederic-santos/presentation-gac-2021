@@ -1,4 +1,4 @@
-#+TITLE: Présentations pour la réunion du lancement du GAC
+#+TITLE: Présentation pour la réunion du lancement du GAC
 #+AUTHOR: Frédéric Santos
 
 Ce dépôt contient le diaporama (HTML) et son fichier source (.org) de la présentation effectuée à la réunion du lancement du [[https://computarcheo.github.io/][Groupe d'Archéologie Computationnelle]] (le 29 novembre 2021 à Pessac).
